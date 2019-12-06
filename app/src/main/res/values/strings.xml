@@ -129,7 +129,7 @@
     <string name="signup_connections">Please Sign Up to View your Connections</string>
     <string name="make_your_profile">Please Sign Up to make your Profile</string>
     <string name="welcome_to_trouvaille">Welcome\nto Trouvaille</string>
-    <string name="trouvaille">Trouvaille</string>
+    <string name="god_of_mercy">God of Mercy</string>
     <string name="username_email">Username / Email</string>
     <string name="password">Password</string>
     <string name="sign_in">SIGN IN</string>
@@ -143,7 +143,7 @@
     <string name="username">Username</string>
     <string name="enter_email_resetpasword">Enter your email address to reset your password.</string>
     <string name="submit">SUBMIT</string>
-    <string name="signin_google">SIGN IN WITH GOOGLE</string>
+    <string name="next">Next</string>
     <string name="sign_in_with_facebook">SIGN IN WITH FACEBOOK</string>
     <string name="explore_as_guest">EXPLORE AS GUEST</string>
     <string name="settings">Settings</string>
