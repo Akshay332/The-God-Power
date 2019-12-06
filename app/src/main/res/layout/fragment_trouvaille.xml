@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/txtv_Trouvaille"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/trouvaille"
+    style="@style/StyleRegularGalaxybt"
+    android:textColor="@color/colorWhite"
+    android:textSize="40sp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintVertical_bias="0.12"/>
+    <Button
+        android:id="@+id/signinBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.74"
+        app:layout_constraintTop_toBottomOf="@id/txtv_Trouvaille"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/sign_in"
+        android:textColor="@color/colorGray5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        android:background="@drawable/drawable_white_rectangle_shape"/>
+    <Button
+        android:id="@+id/signin_GoogleBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_white_rectangle_shape"
+        app:layout_constraintTop_toBottomOf="@id/signinBtn"
+        android:layout_marginTop="24dp"
+        android:text="@string/signin_google"
+        app:layout_constraintStart_toStartOf="@id/signinBtn"
+        app:layout_constraintEnd_toEndOf="@id/signinBtn"
+        android:textColor="@color/colorGray5"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_google"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+    <Button
+        android:id="@+id/signin_FacebookBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_white_rectangle_shape"
+        app:layout_constraintTop_toBottomOf="@id/signin_GoogleBtn"
+        android:layout_marginTop="28dp"
+        android:text="@string/sign_in_with_facebook"
+        android:textColor="@color/colorGray5"
+        android:drawableStart="@drawable/facebook_logo"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintStart_toStartOf="@id/signin_GoogleBtn"
+        app:layout_constraintEnd_toEndOf="@id/signin_GoogleBtn"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/Explor_GuestBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/signin_FacebookBtn"
+        android:background="@drawable/drawable_rectanglewhite_radius25"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@id/signin_FacebookBtn"
+        app:layout_constraintEnd_toEndOf="@id/signin_FacebookBtn"
+        android:text="@string/explore_as_guest"
+        android:textSize="16sp"
+        android:textColor="@color/colorGray5"/>
+    <TextView
+        android:id="@+id/txtv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_an_account"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        style="@style/StyleRegular"
+        app:layout_constraintTop_toBottomOf="@id/Explor_GuestBtn"
+        android:drawableStart="@drawable/ic_create_account_white"
+        android:drawablePadding="6dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/Explor_GuestBtn"
+        app:layout_constraintEnd_toEndOf="@id/Explor_GuestBtn"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

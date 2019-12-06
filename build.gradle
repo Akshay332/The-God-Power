@@ -1,0 +1,71 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+//        classpath 'com.google.gms:google-services:4.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "http://giphy.bintray.com/giphy-sdk" }
+    }
+}
+
+ext {
+    configuration = [
+            packageName      : "com.app_knit.base",
+            compileSdkVersion: 28,
+            targetSdkVersion : 28,
+            minSdkVersion    : 21,
+            versionCode      : 4,
+            versionName      : "1.03"
+    ]
+
+    dependencies = [
+            architectureComponentsVersion: "2.2.0-alpha05",
+            appcompat                    : "1.1.0",
+            legacySupport                : "1.0.0",
+            retrofit                     : "2.6.2",
+            material                     : "1.1.0-beta01",
+            cardView                     : "1.0.0",
+            recyclerview                 : "1.0.0",
+            retrofitConvertor            : "converter-gson:2.6.2",
+            retrofitAdapter              : "2.6.2",
+            rxJava                       : "2.2.13",
+            rxAndroid                    : "2.1.1",
+            okHttpLoginInterceptor       : "4.2.1",
+            googleServicesVersion        : "16.0.0",
+            firebaseCore                 : "17.0.0",
+            firebaseMessages             : "19.0.1",
+            otpPicker                    : "1.4.3",
+            moshi                        : "1.8.0",
+            moshiConvert                 : "2.6.2",
+            branchIo                     : "2.19.5",
+            constraintLayout             : "1.1.3",
+            flexBoxLayout                : "1.1.0",
+            firestore                    : "18.2.0",
+            glide                        : "4.9.0",
+            swipeRevealLayout            : "1.4.1",
+            exoplayer                    : "2.7.2",
+            firebaseStorage              : "18.0.0"
+    ]
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

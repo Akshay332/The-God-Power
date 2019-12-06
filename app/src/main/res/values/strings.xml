@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name" translatable="false">Trouvaille</string>
+
+    <!-- Miscellaneous Strings -->
+    <string name="dialog" translatable="false">dialog</string>
+    <string name="auto_fill_key_name" translatable="false">name</string>
+    <string name="auto_fill_key_password" translatable="false">password</string>
+    <string name="auto_fill_key_phone" translatable="false">phone</string>
+    <string name="auto_fill_key_dob" translatable="false">dob</string>
+    <string name="firestore_conversation_key" translatable="false">conversations</string>
+    <string name="date_picker">Date Picker</string>
+
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="action_okay">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_internet">Please check your internet connection.</string>
+    <string name="retrofit_failure">There might be some problem please try again later.</string>
+    <string name="hint_search">Search…</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="storage_permission_needed">You need to grant read/write external         storage permission in order to access media.</string>
+    <string name="camera_permission_needed">You need to allow camera permission
+        in order to capture photos.</string>
+    <string name="contacts_permission_needed">You need to grant read contacts permission in order to Sync all your contacts.</string>
+    <string name="record_audio_permission_needed">You need to allow record audio permission
+        in order to record dialogs.</string>
+    <string name="enable_storage_permission">You should enable your storage permission         in the settings for better experience.</string>
+    <string name="enable_read_contacts_permission">You should enable your read contacts permission         in the settings for better experience.</string>
+    <string name="no_more_data">No more data found.</string>
+    <string name="location_permission_needed">You need to grant location permission in order to get your present location</string>
+    <string name="launch_activity" translatable="false">Launch Activity</string>
+    <string name="take_video">Take Video</string>
+    <string name="take_still_photo">Take Photo</string>
+    <string name="open_image_gallery">Image Gallery</string>
+    <string name="open_video_gallery">Video Gallery</string>
+
+    <!--country code dialog fragment-->
+    <string name="select_country_code">Code</string>
+    <string name="select_country">Country</string>
+    <string name="fragment_title_country_code">Select Country Code</string>
+    <string name="empty_country_code">Please Select country code.</string>
+    <string name="empty_phone_no">Please enter your phone number.</string>
+    <string name="empty_otp">Please enter OTP code.</string>
+
+    <!--Change password dialogFragment-->
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="empty_old_password">Please enter your old password.</string>
+    <string name="empty_new_password">Please enter your new password.</string>
+    <string name="invalid_new_password">Your new password should contain 6–15 characters.</string>
+    <string name="password_not_matched">Your password didn\'t match.</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--custom names of trouvaille app-->
+    <string name="jack">Jack</string>
+    <string name="samantha">Samantha</string>
+    <string name="id">jkrocks</string>
+    <string name="location">Paris , France</string>
+    <string name="Notification">Notification</string>
+    <string name="all_categories">All categories</string>
+    <string name="location_txt">Location</string>
+    <string name="search_friends">Search Friends....</string>
+    <string name="lets_travel">LET’S TRAVEL</string>
+    <string name="unfriend">Unfriend</string>
+    <string name="alexsmith">Alex Smith</string>
+    <string name="alex">Alex</string>
+    <string name="friends">12 Friends</string>
+    <string name="contries">Countries</string>
+    <string name="number4">4</string>
+    <string name="totalcontries">4 Countries </string>
+    <string name="alexrock">@alexrocks</string>
+    <string name="totalcites">8 Cities</string>
+    <string name="cities">Cities</string>
+    <string name="number8">8</string>
+    <string name="number10">10</string>
+    <string name="palces">Places</string>
+    <string name="build_travel_history">Build Travel History</string>
+    <string name="place_visited">Places Visited</string>
+    <string name="punta_cana">Punta Cana Dominican Republic</string>
+    <string name="dominican_Republic">Dominican Republic</string>
+    <string name="view_all">View all</string>
+    <string name="photos">Photos</string>
+    <string name="arc_de_triomphe">Arc de Triomphe</string>
+    <string name="two_friends_visited">You and 2 Friends has visited this place</string>
+    <string name="visited">Visited</string>
+    <string name="_80">80%</string>
+    <string name="_20">20%</string>
+    <string name="museums">Museums</string>
+    <string name="website">Website</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="opening_hours">Opening Hours</string>
+    <string name="address">Address</string>
+    <string name="open_close_time">Open 10AM - Closes 11PM</string>
+    <string name="open">Open</string>
+    <string name="close">Closes</string>
+    <string name="addressfull">Place Charles de Gaulle, 75008 Paris, France</string>
+    <string name="visited_friends">9 Friends have visited this place</string>
+    <string name="john">John</string>
+    <string name="albert">Albert</string>
+    <string name="rose">Rose</string>
+    <string name="your_photos">YOUR PHOTOS</string>
+    <string name="friends_photo">FRIENDS’ PHOTO</string>
+    <string name="travel_tips">TRAVEL TIPS</string>
+    <string name="txtv_tips">It is a long established fact that a reader will be distracted by the readable content of a page…</string>
+    <string name="more">More</string>
+    <string name="edit">Edit</string>
+    <string name="remove">Remove</string>
+    <string name="time_date">11:30PM 5 Aug</string>
+    <string name="must_visit_at_night">Must visit at night</string>
+    <string name="john_smith">John Smith</string>
+    <string name="added_traveltips">Added a travel trip for</string>
+    <string name="allow_location_access">Allow locations Access</string>
+    <string name="contacts">Contacts</string>
+    <string name="allow_contacts">Allow Contacts Access</string>
+    <string name="allow_push_notification">Allow Push Notifications</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy">Privacy</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="signup_visitedbyfriends">Please Sign Up to View places those visited by your friends</string>
+    <string name="sign_up_now">SIGN UP NOW</string>
+    <string name="signup_connections">Please Sign Up to View your Connections</string>
+    <string name="make_your_profile">Please Sign Up to make your Profile</string>
+    <string name="welcome_to_trouvaille">Welcome\nto Trouvaille</string>
+    <string name="trouvaille">Trouvaille</string>
+    <string name="username_email">Username / Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="next">Next</string>
+    <string name="setup_account">Set Up Your Account</string>
+    <string name="account">Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+    <string name="enter_email_resetpasword">Enter your email address to reset your password.</string>
+    <string name="submit">SUBMIT</string>
+    <string name="signin_google">SIGN IN WITH GOOGLE</string>
+    <string name="sign_in_with_facebook">SIGN IN WITH FACEBOOK</string>
+    <string name="explore_as_guest">EXPLORE AS GUEST</string>
+    <string name="settings">Settings</string>
+
+
+</resources>

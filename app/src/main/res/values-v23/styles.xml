@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTextGreen</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryTextDarkGreen</item>
+        <item name="colorAccent">@color/colorPrimaryTextGreen</item>
+        <item name="colorButtonNormal">@color/colorPrimaryTextGreen</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/MenuOverFlow</item>
+        <item name="android:itemBackground">@color/colorWhite</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextAppearance</item>
+        <item name="popupMenuStyle">@style/StylePopupMenu</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+        <!--switch themes-->
+
+    <style name="SwitchCompatTheme" >
+        <item name="colorControlActivated">@color/colorMaroon</item>
+    </style>
+</resources>

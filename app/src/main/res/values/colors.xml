@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#147293</color>
+    <color name="colorAccent">#F83F5B</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorTitle">#FFFFFFFF</color>
+    <!--<color name="colorDivider">#E7E7E7</color>-->
+    <color name="colorPrimaryTextDark">#464444</color>
+    <color name="colorPrimaryTextDarkGreen">#147293</color>
+    <color name="colorPrimaryTextGreen">#03B5AA</color>
+    <color name="colorPrimaryTextBlue">#086788</color>
+    <color name="colorPrimaryText">#4c5b5c</color>
+    <color name="colorPrimaryBackground">#CF5F5F</color>
+    <!--<color name="colorSecondaryText">#676767</color>-->
+    <color name="colorDisabledText">#999999</color>
+    <color name="colorGrayBorder">#d9d9d9</color>
+    <color name="colorGrayBg">#F1F1F1</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorWhite80">#ccffffff</color>
+    <color name="colorWhite70">#b4ffffff</color>
+    <color name="colorWhite40">#66FFFFFF</color>
+    <color name="colorWhite41">#F5F5F5</color>
+    <color name="colorWhite10">#a0707070</color>
+    <color name="colorBlack10">#20000000</color>
+    <color name="colorBlack50">#80000000</color>
+    <color name="colorBlack60">#99000000</color>
+    <color name="colorGradientSignInStart">#3393AB</color>
+    <color name="colorGradientSignInEnd">#127091</color>
+    <color name="colorGradientSignUpStart">#33D4CF</color>
+    <color name="colorGradientSignUpEnd">#37A2AF</color>
+    <color name="colorExpandView">#A0A0A0</color>
+    <color name="colorChatUnread">#e4f1f4</color>
+    <!--some more color-->
+    <color name="tint">#03B5AA</color>
+    <color name="colorMaroon">#CF5F5F</color>
+    <color name="colorGray">#48565F</color>
+    <color name="colorGray2">#6B6B6B</color>
+    <color name="colorGray3">#919DA5</color>
+    <color name="colorGray4">#7E93A0</color>
+    <color name="colorGrayBlue">#39495A</color>
+    <color name="colorGray6">#ACACAC</color>
+    <color name="colorGray7">#929495</color>
+    <color name="colorGray5">#63747F</color>
+    <color name="colorGray8">#555555</color>
+    <color name="colorGray9">#8B8B8B</color>
+    <color name="colorMaroon2">#C85050</color>
+    <color name="colorBluelight">#5F8ACF</color>
+    <color name="colorGray10">#7C7777</color>
+    <color name="colorgray11">#DEDEDE</color>
+    <color name="colorGray12">#595A5A</color>
+    <color name="colorGray13">#818181</color>
+    <color name="colorGreen">#08AD28</color>
+    <color name="colorGrayBrown">#4D4D4D</color>
+    <color name="colorBlack1">#2B2727</color>
+    <color name="colorGrayLight">#9D9D9D</color>
+    <color name="colorGray14">#647580</color>
+    <color name="colorGray15">#969696</color>
+    <color name="colorGray16">#9E9C9C</color>
+    <color name="colorGray17">#48565F</color>
+
+
+</resources>

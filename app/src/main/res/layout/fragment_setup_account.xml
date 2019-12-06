@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <ImageView
+                android:id="@+id/iv_backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                android:src="@drawable/ic_backbuttonmaroon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtv_next"
+                style="@style/StyleSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:textColor="@color/colorMaroon"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintTop_toTopOf="@id/iv_backBtn" />
+
+            <TextView
+                android:id="@+id/txtv_setupAccount"
+                style="@style/StyleRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:ems="5"
+                android:text="@string/setup_account"
+                android:textColor="@color/colorGray5"
+                android:textSize="35sp"
+                app:layout_constraintStart_toEndOf="@id/iv_backBtn"
+                app:layout_constraintTop_toBottomOf="@id/iv_backBtn" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_CircleImg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ic_profile"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintHeight_percent="0.10"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/txtv_setupAccount"
+                app:layout_constraintWidth_percent="0.24" />
+
+            <ImageView
+                android:id="@+id/iv_addImageIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_image_icon"
+                app:layout_constraintBottom_toBottomOf="@id/iv_CircleImg"
+                app:layout_constraintEnd_toEndOf="@id/iv_CircleImg"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="@id/iv_CircleImg"
+                app:layout_constraintTop_toTopOf="@id/iv_CircleImg"
+                app:layout_constraintVertical_bias="1" />
+
+            <TextView
+                android:id="@+id/txtv_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="42dp"
+                android:fontFamily="@font/font_futuramediumbt"
+                android:text="@string/first_name"
+                android:textColor="@color/colorGray5"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/iv_CircleImg" />
+
+            <EditText
+                android:id="@+id/editTxt_Alex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:hint="@string/alex"
+                android:theme="@style/EditTextCustomLinecolor"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorGray5"
+                app:layout_constraintEnd_toStartOf="@id/txtv_next"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/txtv_firstname" />
+
+            <TextView
+                android:id="@+id/txtv_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/font_futuramediumbt"
+                android:text="@string/last_name"
+                android:textColor="@color/colorGray5"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/txtv_firstname"
+                app:layout_constraintTop_toBottomOf="@id/editTxt_Alex" />
+
+            <EditText
+                android:id="@+id/editTxt_lastname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:inputType="textPersonName"
+                android:theme="@style/EditTextCustomLinecolor"
+                android:textColorHint="@color/colorGray5"
+                app:layout_constraintEnd_toEndOf="@id/editTxt_Alex"
+                app:layout_constraintStart_toStartOf="@id/editTxt_Alex"
+                app:layout_constraintTop_toBottomOf="@id/txtv_lastname" />
+
+            <TextView
+                android:id="@+id/txtv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/font_futuramediumbt"
+                android:text="@string/username"
+                android:textColor="@color/colorGray5"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/txtv_lastname"
+                app:layout_constraintTop_toBottomOf="@id/editTxt_lastname" />
+
+            <EditText
+                android:id="@+id/editTxt_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:theme="@style/EditTextCustomLinecolor"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorGray5"
+                app:layout_constraintEnd_toEndOf="@id/editTxt_lastname"
+                app:layout_constraintStart_toStartOf="@id/editTxt_lastname"
+                app:layout_constraintTop_toBottomOf="@id/txtv_username" />
+
+            <TextView
+                android:id="@+id/txtv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/font_futuramediumbt"
+                android:text="@string/email"
+                android:textColor="@color/colorGray5"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/txtv_username"
+                app:layout_constraintTop_toBottomOf="@id/editTxt_username" />
+
+            <EditText
+                android:id="@+id/editTxt_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:inputType="textEmailAddress"
+                android:theme="@style/EditTextCustomLinecolor"
+                android:textColorHint="@color/colorGray5"
+                app:layout_constraintEnd_toEndOf="@id/editTxt_username"
+                app:layout_constraintStart_toStartOf="@id/editTxt_username"
+                app:layout_constraintTop_toBottomOf="@id/txtv_email" />
+
+            <TextView
+                android:id="@+id/txtv_paswrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/font_futuramediumbt"
+                android:text="@string/password"
+                android:textColor="@color/colorGray5"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/txtv_email"
+                app:layout_constraintTop_toBottomOf="@id/editTxt_email" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_inputlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@id/editTxt_email"
+                app:layout_constraintStart_toStartOf="@id/editTxt_email"
+                app:layout_constraintTop_toBottomOf="@id/txtv_paswrd"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/editTxt_pasword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:theme="@style/EditTextCustomLinecolor"
+                    android:textColorHint="@color/colorGray5"
+                    app:layout_constraintEnd_toEndOf="@id/editTxt_email"
+                    app:layout_constraintStart_toStartOf="@id/editTxt_email"
+                    app:layout_constraintTop_toBottomOf="@id/txtv_paswrd" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtv_confirmPasword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/font_futuramediumbt"
+                android:text="@string/confirm_password"
+                android:textColor="@color/colorGray5"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/txtv_paswrd"
+                app:layout_constraintTop_toBottomOf="@id/txt_inputlayout" />
+
+            <EditText
+                android:id="@+id/editTxt_Confirmpasword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="54dp"
+                android:inputType="textPassword"
+                android:theme="@style/EditTextCustomLinecolor"
+                android:textColorHint="@color/colorGray5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/txt_inputlayout"
+                app:layout_constraintStart_toStartOf="@id/txt_inputlayout"
+                app:layout_constraintTop_toBottomOf="@id/txtv_confirmPasword" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

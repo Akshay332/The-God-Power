@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:padding="6dp"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/txTv_location_paris"
+    style="@style/StyleSemiBold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_colormaroon_text_stroke"
+    android:drawableStart="@drawable/ic_location_placeholder"
+    android:drawablePadding="4dp"
+    android:padding="6dp"
+    android:text="@string/location"
+    android:textAlignment="center"
+    android:textColor="@color/colorGray5"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txTvmuseum"
+        style="@style/StyleSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/drawable_colormaroon_text_stroke"
+        android:padding="6dp"
+        android:text="@string/museums"
+        android:textColor="@color/colorGray5"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txTv_location_paris"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
