@@ -2,193 +2,188 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    android:focusable="true"
     android:clickable="true"
-    android:layout_height="match_parent">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent">
-    <androidx.constraintlayout.widget.ConstraintLayout
+    android:focusable="true">
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp">
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guidelineStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.05" />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guidelineEnd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.95" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
 
 
-        <ImageView
-            android:id="@+id/iv_backbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:src="@drawable/ic_backbuttonmaroon"
-            app:layout_constraintStart_toStartOf="@id/guidelineStart"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/iv_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_backbuttonmaroon"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/txtv_welcmTrouvle"
-            style="@style/StyleRegular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="42dp"
-            android:text="@string/welcome_to_trouvaille"
-            android:textColor="@color/colorGray5"
-            android:textSize="36sp"
-            app:layout_constraintStart_toEndOf="@id/iv_backbtn"
-            app:layout_constraintTop_toBottomOf="@id/iv_backbtn" />
+            <TextView
+                android:id="@+id/txtv_welcmTrouvle"
+                style="@style/StyleRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/welcome_to_devine"
+                android:textColor="@color/colorGray5"
+                android:textSize="38sp"
+                app:layout_constraintStart_toEndOf="@id/iv_backbtn"
+                app:layout_constraintTop_toBottomOf="@id/iv_backbtn" />
 
-        <TextView
-            android:id="@+id/txtv_username_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:drawableStart="@drawable/ic_username"
-            android:drawablePadding="4dp"
-            android:fontFamily="@font/font_futuramediumbt"
-            android:text="@string/username_email"
-            android:textColor="@color/colorGray5"
-            android:textSize="17sp"
-            app:layout_constraintStart_toStartOf="@id/txtv_welcmTrouvle"
-            app:layout_constraintTop_toBottomOf="@id/txtv_welcmTrouvle" />
+            <TextView
+                android:id="@+id/txtv_choice"
+                style="@style/StyleSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/select_your_choice"
+                android:textColor="@color/colorMaroon2"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="@id/txtv_welcmTrouvle"
+                app:layout_constraintStart_toStartOf="@id/txtv_welcmTrouvle"
+                app:layout_constraintTop_toBottomOf="@id/txtv_welcmTrouvle" />
 
-        <EditText
-            android:id="@+id/editTxt_Alex"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:theme="@style/EditTextCustomLinecolor"
-            android:hint="@string/alex"
-            android:inputType="textPersonName"
-            android:layout_marginTop="16dp"
-            android:textColorHint="@color/colorGray5"
-            app:layout_constraintEnd_toEndOf="@id/signinBtn"
-            app:layout_constraintStart_toStartOf="@id/guidelineStart"
-            app:layout_constraintTop_toBottomOf="@id/txtv_username_email" />
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorMaroon2"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/txtv_choice"/>
 
-        <TextView
-            android:id="@+id/txtv_paswrdText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_lock"
-            android:drawablePadding="4dp"
-            android:fontFamily="@font/font_futuramediumbt"
-            android:text="@string/password"
-            android:textColor="@color/colorGray5"
-            android:textSize="17sp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="@id/editTxt_Alex"
-            app:layout_constraintTop_toBottomOf="@id/editTxt_Alex" />
+            <ImageView
+                android:id="@+id/iv_hnuman"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/iv_gnesh"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@id/view" />
 
-        <EditText
-            android:id="@+id/txtv_paswrd"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:inputType="numberPassword"
-            android:textColorHint="@color/colorGray5"
-            android:layout_marginTop="16dp"
-            android:theme="@style/EditTextCustomLinecolor"
-            app:layout_constraintEnd_toEndOf="@id/signinBtn"
-            app:layout_constraintStart_toStartOf="@id/guidelineStart"
-            app:layout_constraintTop_toBottomOf="@id/txtv_paswrdText" />
+            <TextView
+                android:id="@+id/txtv_hnuman"
+                style="@style/StyleRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ems="4"
+                android:text="@string/hanuman"
+                android:textAlignment="center"
+                android:textColor="@color/colorOrange"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/iv_hnuman"
+                app:layout_constraintStart_toStartOf="@id/iv_hnuman"
+                app:layout_constraintTop_toBottomOf="@id/iv_hnuman" />
 
-        <Button
-            android:id="@+id/signinBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="34dp"
-            android:background="@drawable/drawable_rectanglemarronbutton"
-            android:text="@string/sign_in"
-            android:textColor="@color/colorWhite"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-            app:layout_constraintStart_toStartOf="@id/guidelineStart"
-            app:layout_constraintTop_toBottomOf="@id/txtv_paswrd"
-            app:layout_constraintWidth_percent="0.74" />
+            <ImageView
+                android:id="@+id/iv_gnesh"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintEnd_toStartOf="@+id/iv_shiva"
+                app:layout_constraintStart_toEndOf="@+id/iv_hnuman"
+                app:layout_constraintTop_toBottomOf="@id/view" />
 
-        <TextView
-            android:id="@+id/txtv_forgot_paswrd"
-            style="@style/StyleRegular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:text="@string/forgot_password"
-            android:textColor="@color/colorGray16"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-            app:layout_constraintStart_toStartOf="@id/guidelineStart"
-            app:layout_constraintTop_toBottomOf="@id/signinBtn" />
+            <TextView
+                android:id="@+id/txtv_gnesh"
+                style="@style/StyleRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:text="@string/shree_ganesh"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/iv_gnesh"
+                app:layout_constraintStart_toStartOf="@id/iv_gnesh"
+                app:layout_constraintTop_toBottomOf="@id/iv_gnesh" />
 
-        <Button
-            android:id="@+id/signin_GoogleBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:layout_marginStart="34dp"
-            android:background="@drawable/drawable_rectanglewhite_radius20"
-            android:drawableStart="@drawable/ic_google"
-            android:drawablePadding="10dp"
-            android:padding="10dp"
-            android:text="@string/sign_in"
-            android:textColor="@color/colorMaroon"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/signin_FacebookBtn"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtv_forgot_paswrd" />
+            <ImageView
+                android:id="@+id/iv_shiva"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:elevation="4dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintEnd_toStartOf="@+id/iv_shani"
+                app:layout_constraintStart_toEndOf="@+id/iv_gnesh"
+                app:layout_constraintTop_toTopOf="@id/iv_gnesh" />
 
-        <Button
-            android:id="@+id/signin_FacebookBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:background="@drawable/drawable_rectanglewhite_radius20"
-            android:drawableStart="@drawable/facebook_logo"
-            android:drawablePadding="10dp"
-            android:padding="10dp"
-            android:text="@string/sign_in"
-            android:textColor="@color/colorMaroon"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="34dp"
-            app:layout_constraintStart_toEndOf="@+id/signin_GoogleBtn"
-            app:layout_constraintTop_toBottomOf="@id/txtv_forgot_paswrd" />
+            <TextView
+                android:id="@+id/txtv_shiv"
+                style="@style/StyleRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:text="@string/shree_mahadev"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/iv_shiva"
+                app:layout_constraintStart_toStartOf="@id/iv_shiva"
+                app:layout_constraintTop_toBottomOf="@id/iv_shiva" />
 
-        <TextView
-            android:id="@+id/txtv_create_account"
-            style="@style/StyleRegular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:drawableStart="@drawable/ic_create_account_red"
-            android:drawablePadding="6dp"
-            android:text="@string/create_an_account"
-            android:textColor="@color/colorMaroon"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="24dp"
-            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-            app:layout_constraintStart_toStartOf="@id/guidelineStart"
-            app:layout_constraintTop_toBottomOf="@id/signin_GoogleBtn" />
+            <ImageView
+                android:id="@+id/iv_shani"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:elevation="4dp"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toEndOf="@+id/iv_shiva"
+                app:layout_constraintTop_toTopOf="@id/iv_shiva" />
+            <TextView
+                android:id="@+id/txtv_shani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shree_shani_dev"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:ems="4"
+                style="@style/StyleRegular"
+                app:layout_constraintTop_toBottomOf="@id/iv_shani"
+                app:layout_constraintStart_toStartOf="@id/iv_shani"
+                app:layout_constraintEnd_toEndOf="@id/iv_shani"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

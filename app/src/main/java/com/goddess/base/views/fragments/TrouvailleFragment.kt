@@ -23,28 +23,29 @@ class TrouvailleFragment : BaseFragment(),View.OnClickListener {
         activity!!.window.statusBarColor = ContextCompat.getColor(requireContext(), R.color.colorTransparent)
         activity!!.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
                 View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-        signinBtn.setOnClickListener(this)
-        signin_GoogleBtn.setOnClickListener(this)
-        signin_FacebookBtn.setOnClickListener(this)
-        txtv_create_account.setOnClickListener(this)
+          txtv_devine.setOnClickListener(this)
+        txtv_next.setOnClickListener(this)
+//        signin_GoogleBtn.setOnClickListener(this)
+//        signin_FacebookBtn.setOnClickListener(this)
+//        txtv_create_account.setOnClickListener(this)
 
 
     }
 
     override fun onClick(p0: View?) {
         when(p0!!.id){
-            R.id.signinBtn ->{
+            R.id.txtv_next ->{
                 (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = WelcomeTrouvailleFragment(), isAddFragment = false)
             }
-            R.id.signin_GoogleBtn ->{
-                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId =R.id.flFragContainerMain, fragment = BottomNavigationTabLayoutFragment(), isAddFragment = false  )
-            }
-            R.id.signin_FacebookBtn ->{
-                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId =R.id.flFragContainerMain, fragment = BottomNavigationTabLayoutFragment(), isAddFragment = false  )
-            }
-            R.id.txtv_create_account ->{
-                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId =R.id.flFragContainerMain, fragment = SetupAccountFragment(), isAddFragment = false  )
-            }
+//            R.id.signin_GoogleBtn ->{
+//                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId =R.id.flFragContainerMain, fragment = BottomNavigationTabLayoutFragment(), isAddFragment = false  )
+//            }
+//            R.id.signin_FacebookBtn ->{
+//                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId =R.id.flFragContainerMain, fragment = BottomNavigationTabLayoutFragment(), isAddFragment = false  )
+//            }
+//            R.id.txtv_create_account ->{
+//                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId =R.id.flFragContainerMain, fragment = SetupAccountFragment(), isAddFragment = false  )
+//            }
 
         }
     }
