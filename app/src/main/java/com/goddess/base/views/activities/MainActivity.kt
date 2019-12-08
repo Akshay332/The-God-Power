@@ -15,7 +15,7 @@ class MainActivity : BaseAppCompactActivity() {
 
     override fun init() {
 
-        doFragmentTransaction(fragManager = supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = TrouvailleFragment())
+        doFragmentTransaction(fragManager = supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = DevineFragment())
         // check if app is restarted from launcher icon then close redundant activity
         if (!isTaskRoot
                 && intent.hasCategory(Intent.CATEGORY_LAUNCHER)

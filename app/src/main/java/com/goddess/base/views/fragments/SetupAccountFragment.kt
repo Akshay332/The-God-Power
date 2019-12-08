@@ -41,7 +41,7 @@ class SetupAccountFragment : BaseFragment(),View.OnClickListener {
                 (activity!!.supportFragmentManager.popBackStack())
             }
             R.id.txtv_next ->{
-                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = WelcomeTrouvailleFragment(), isAddFragment = false)
+                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = WelcomeDevinePowerFragment(), isAddFragment = false)
             }
         }
     }

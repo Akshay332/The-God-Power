@@ -5,6 +5,7 @@ import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
 import android.view.View
+import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -19,7 +20,20 @@ import kotlinx.android.synthetic.main.fragment_welcometo_trouvaille.*
 /**
  * A simple [Fragment] subclass.
  */
-class WelcomeTrouvailleFragment : BaseFragment(),View.OnClickListener {
+class WelcomeDevinePowerFragment : BaseFragment(),View.OnClickListener,Animation.AnimationListener {
+    override fun onAnimationRepeat(animation: Animation?) {
+
+    }
+
+    override fun onAnimationEnd(animation: Animation?) {
+
+    }
+
+    override fun onAnimationStart(animation: Animation?) {
+
+    }
+
+
     override val layoutId: Int
         get() = R.layout.fragment_welcometo_trouvaille
     override val viewModel: BaseViewModel?
@@ -55,25 +69,23 @@ class WelcomeTrouvailleFragment : BaseFragment(),View.OnClickListener {
                 .into(iv_shani)
 
         iv_hnuman.setOnClickListener(this)
-
-
-
-//        signinBtn.setOnClickListener(this)
-//        txtv_create_account.setOnClickListener(this)
-//        txtv_forgot_paswrd.setOnClickListener(this)
-//        iv_backbtn.setOnClickListener(this)
-
+        iv_gnesh.setOnClickListener(this)
 
 
 
 
     }
 
+
     override fun onClick(p0: View?) {
+
         when(p0!!.id) {
             R.id.iv_hnuman -> {
                 (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = HanumanChalisaFragment(), isAddFragment = false)
 
+            }
+            R.id.iv_gnesh ->{
+                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = GaneshChalisaFragment(), isAddFragment = false)
 
             }
 
