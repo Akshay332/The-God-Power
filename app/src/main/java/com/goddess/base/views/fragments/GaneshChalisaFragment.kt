@@ -22,6 +22,7 @@ class GaneshChalisaFragment : BaseFragment() {
     override val viewModel: BaseViewModel?
         get() = null
     override fun init() {
+        iv_backBtn.setOnClickListener {  (activity!!.supportFragmentManager.popBackStack()) }
         Glide.with(this)
                 .load("https://pujavidhi.in/wp-content/uploads/2019/05/Ganesh-Chalisa.jpg")
                 .placeholder(R.drawable.ic_avatar)

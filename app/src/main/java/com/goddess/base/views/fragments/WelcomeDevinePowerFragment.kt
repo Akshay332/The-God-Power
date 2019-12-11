@@ -51,6 +51,8 @@ class WelcomeDevinePowerFragment : BaseFragment(),View.OnClickListener,Animation
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         window.statusBarColor = ContextCompat.getColor(activity!!, R.color.colorWhite)
 
+        iv_backbtn.setOnClickListener {(activity!!.supportFragmentManager.popBackStack()) }
+
         Glide.with(this)
                 .load("https://images-na.ssl-images-amazon.com/images/I/71%2BATmtoucL._SL1200_.jpg")
                 .placeholder(R.drawable.ic_avatar)
@@ -70,6 +72,7 @@ class WelcomeDevinePowerFragment : BaseFragment(),View.OnClickListener,Animation
 
         iv_hnuman.setOnClickListener(this)
         iv_gnesh.setOnClickListener(this)
+        iv_shiva.setOnClickListener(this)
 
 
 
@@ -86,6 +89,10 @@ class WelcomeDevinePowerFragment : BaseFragment(),View.OnClickListener,Animation
             }
             R.id.iv_gnesh ->{
                 (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = GaneshChalisaFragment(), isAddFragment = false)
+
+            }
+            R.id.iv_shiva ->{
+                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ShivChalisaFragment(), isAddFragment = false)
 
             }
 

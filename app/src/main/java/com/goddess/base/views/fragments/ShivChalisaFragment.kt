@@ -6,30 +6,28 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.bumptech.glide.Glide
+
 import com.goddess.base.R
 import com.goddess.base.viewmodels.BaseViewModel
-import kotlinx.android.synthetic.main.fragment_hanuman.*
-
+import kotlinx.android.synthetic.main.fragment_shiv_chalisa.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class HanumanChalisaFragment : BaseFragment() {
+class ShivChalisaFragment : BaseFragment() {
     override val layoutId: Int
-        get() = R.layout.fragment_hanuman
+        get() = R.layout.fragment_shiv_chalisa
     override val viewModel: BaseViewModel?
         get() = null
+
     override fun init() {
-        iv_backBtn.setOnClickListener { (activity!!.supportFragmentManager.popBackStack()) }
+        iv_backbtn.setOnClickListener { (activity!!.supportFragmentManager.popBackStack()) }
         Glide.with(this)
-                .load("https://www.bhaktiphotos.com/wp-content/uploads/2018/04/Lord-Hanuman-Ji-Ramayan-Photos.jpg")
+                .load("https://spiderimg.amarujala.com/assets/images/2018/02/13/750x506/shivratri_1518533465.jpeg")
                 .placeholder(R.drawable.ic_avatar)
-                .into(iv_hnumanimg)
+                .into(iv_shivimg)
     }
 
+
 }
-
-
-
