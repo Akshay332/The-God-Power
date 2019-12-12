@@ -15,7 +15,7 @@ import com.goddess.base.R
 import com.goddess.base.viewmodels.BaseViewModel
 import com.goddess.base.views.activities.BaseAppCompactActivity
 import com.goddess.base.views.activities.doFragmentTransaction
-import kotlinx.android.synthetic.main.fragment_welcometo_trouvaille.*
+import kotlinx.android.synthetic.main.fragment_welcometo_devinepower.*
 
 /**
  * A simple [Fragment] subclass.
@@ -35,7 +35,7 @@ class WelcomeDevinePowerFragment : BaseFragment(),View.OnClickListener,Animation
 
 
     override val layoutId: Int
-        get() = R.layout.fragment_welcometo_trouvaille
+        get() = R.layout.fragment_welcometo_devinepower
     override val viewModel: BaseViewModel?
         get() = null
 
@@ -73,6 +73,15 @@ class WelcomeDevinePowerFragment : BaseFragment(),View.OnClickListener,Animation
         iv_hnuman.setOnClickListener(this)
         iv_gnesh.setOnClickListener(this)
         iv_shiva.setOnClickListener(this)
+        iv_shani.setOnClickListener(this)
+        txtv_welcmTrouvle.setOnClickListener(this)
+        txtv_choice.setOnClickListener(this)
+
+        val bounce = AnimationUtils.loadAnimation(activityContext,R.anim.bounce)
+        txtv_welcmTrouvle.startAnimation(bounce)
+        val blink = AnimationUtils.loadAnimation(activityContext,R.anim.blink)
+        txtv_choice.startAnimation(blink)
+
 
 
 
@@ -94,6 +103,9 @@ class WelcomeDevinePowerFragment : BaseFragment(),View.OnClickListener,Animation
             R.id.iv_shiva ->{
                 (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ShivChalisaFragment(), isAddFragment = false)
 
+            }
+            R.id.iv_shani ->{
+                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ShaniChalisaFragment(), isAddFragment = false)
             }
 
 
